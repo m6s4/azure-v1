@@ -1,0 +1,13 @@
+local CoreGui = game:GetService("StarterGui")
+
+local bindf = Instance.new("BindableFunction")
+bindf.OnInvoke = function(buttonText)
+print("Coming Soon!")
+
+local Notify = CoreGui:SetCore("SendNotification", {
+    Title = "Blood Gui";
+    Text = "Sorry we have not got the updated version currently please wait for an update thanks!";
+    Duration = 15;
+    Button1 = "Okay!";
+    Callback = bindf
+})
